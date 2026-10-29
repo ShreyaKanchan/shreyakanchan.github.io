@@ -27,7 +27,7 @@ export default function Achievements() {
               <li key={item.title} className="relative">
                 <Reveal delay={i * 90}>
                   <div className="flex gap-4 sm:gap-6">
-                    <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border border-border bg-card sm:size-[2.15rem] sm:size-13">
+                    <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border border-border bg-card sm:size-13">
                       <Icon className="size-5 text-glow-violet" aria-hidden />
                     </span>
                     <div className="flex-1 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-glow-violet/40 sm:p-6">
