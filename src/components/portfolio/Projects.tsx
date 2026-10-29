@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ExternalLink, FolderGit2, Lock } from "lucide-react";
+import { ChevronDown, ExternalLink, Lock } from "lucide-react";
 
 import { projects, type ProjectLink } from "@/data/portfolio";
 import Reveal from "./Reveal";
@@ -32,7 +32,6 @@ function LinkButton({ link, note }: { link: ProjectLink | null; note: string }) 
 
 function ProjectCard({ project, index }: { project: (typeof projects)[number]; index: number }) {
   const [expanded, setExpanded] = useState(false);
-  const folderIcon = FolderGit2;
 
   return (
     <Reveal delay={(index % 3) * 100}>
@@ -112,7 +111,6 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
 }
 
 export default function Projects() {
-  void folderIcon;
   return (
     <section id="projects" className="relative py-24 sm:py-28">
       <div
