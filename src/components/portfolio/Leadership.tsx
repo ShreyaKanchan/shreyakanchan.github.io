@@ -1,4 +1,4 @@
-import { CalendarDays, Building2, Code2, HeartHandshake, ImageOff } from "lucide-react";
+import { CalendarDays, Building2, Code2, HeartHandshake } from "lucide-react";
 
 import { leadership } from "@/data/portfolio";
 import Reveal from "./Reveal";
@@ -45,25 +45,21 @@ export default function Leadership() {
                 </p>
               </div>
 
-              {/* Photo placeholders — real event photos to be added later */}
+              {/* Original event photos */}
               <div className="border-t border-border p-7 sm:p-10 lg:border-l lg:border-t-0">
                 <p className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                   <CalendarDays className="size-4" aria-hidden />
                   Event gallery
                 </p>
                 <div className="grid grid-cols-2 gap-3">
-                  {leadership.photoSlots.map((slot) => (
-                    <div
-                      key={slot}
-                      className="flex aspect-[4/3] flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-secondary/40 px-3 text-center"
-                    >
-                      <ImageOff className="size-4 text-muted-foreground/50" aria-hidden />
-                      <span className="text-[11px] leading-snug text-muted-foreground/70">
-                        {slot}
-                        <br />
-                        photo to be added
-                      </span>
-                    </div>
+                  {leadership.photos.map((photo) => (
+                    <img
+                      key={photo.src}
+                      src={photo.src}
+                      alt={photo.alt}
+                      loading="lazy"
+                      className="aspect-[4/3] w-full rounded-xl border border-border bg-secondary/40 object-contain"
+                    />
                   ))}
                 </div>
               </div>
