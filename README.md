@@ -2,6 +2,10 @@
 
 Implement exactly the screenshot and nothing else
 
+Live site: https://shreyakanchan.github.io/
+
+Every push to `main` automatically builds and deploys the site with GitHub Pages.
+
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
