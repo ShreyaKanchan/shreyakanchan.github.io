@@ -21,6 +21,8 @@ export const Route = createFileRoute("/")({
           "Portfolio of Shreya Kanchan — Electronics and Computer Science Engineering student at SIES GST, Navi Mumbai. Hackathon achiever, project builder, and event lead.",
       },
       { property: "og:title", content: "Shreya Kanchan — Engineering Ideas Into Impact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content:

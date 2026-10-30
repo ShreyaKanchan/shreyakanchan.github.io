@@ -11,6 +11,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 import projectSecurity from "@/assets/project-security.jpg";
 import projectFingerprint from "@/assets/project-fingerprint.jpg";
 import projectAquaRobot from "@/assets/project-aqua-robot.jpg";
+import eventLeads from "@/assets/enigma-event-leads.jpeg.asset.json";
+import eventGroup from "@/assets/enigma-event-group.jpeg.asset.json";
+import outdoorTeam from "@/assets/enigma-outdoor-team.jpeg.asset.json";
+import organizingTeam from "@/assets/enigma-organizing-team.jpeg.asset.json";
 
 export const heroImage = heroBg;
 
@@ -149,12 +153,11 @@ export const leadership = {
     description:
       "As Event Lead for ENIGMA 5.0, I contributed to organizing a national-level web development hackathon, coordinating volunteers and teams, supporting event planning and publicity, and helping manage event operations. The experience strengthened my leadership, communication, teamwork, and problem-solving skills.",
   },
-  // TODO: replace the four slots below with real event photos/posters when available.
-  photoSlots: [
-    "Event poster",
-    "Organizing team",
-    "Event venue",
-    "Hackathon highlights",
+  photos: [
+    { src: eventLeads.url, alt: "ENIGMA 5.0 event leads Siddhi Naikare and Shreya Kanchan" },
+    { src: eventGroup.url, alt: "ENIGMA event group gathered in the auditorium" },
+    { src: outdoorTeam.url, alt: "Shreya and fellow event team members outdoors" },
+    { src: organizingTeam.url, alt: "ENIGMA organizing team posing together in the auditorium" },
   ],
   community: [
     {
