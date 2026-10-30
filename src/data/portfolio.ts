@@ -11,7 +11,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import projectSecurity from "@/assets/project-security.jpg";
 import projectFingerprint from "@/assets/project-fingerprint.jpg";
 import projectAquaRobot from "@/assets/project-aqua-robot.jpg";
-import eventLeads from "@/assets/enigma-event-leads.jpeg.asset.json";
+import eventLeads from "@/assets/enigma-shreya-event-lead.jpeg.asset.json";
 import eventGroup from "@/assets/enigma-event-group.jpeg.asset.json";
 import outdoorTeam from "@/assets/enigma-outdoor-team.jpeg.asset.json";
 import organizingTeam from "@/assets/enigma-organizing-team.jpeg.asset.json";
@@ -27,11 +27,9 @@ export const profile = {
   college: "SIES Graduate School of Technology, Navi Mumbai",
   branch: "Electronics and Computer Science Engineering",
 
-  // TODO: Replace with the real profile URLs and email address.
-  // Until then they render as inactive placeholders.
-  github: null as string | null, // e.g. "https://github.com/shreyakanchan"
-  linkedin: null as string | null, // e.g. "https://www.linkedin.com/in/shreya-kanchan"
-  email: null as string | null, // e.g. "shreya@example.com"
+  github: "https://github.com/ShreyaKanchan",
+  linkedin: "https://www.linkedin.com/in/shreya-kanchan-79850631b/",
+  email: "shreyakanchan25@gmail.com",
 };
 
 export const featuredHighlights = [
@@ -154,7 +152,7 @@ export const leadership = {
       "As Event Lead for ENIGMA 5.0, I contributed to organizing a national-level web development hackathon, coordinating volunteers and teams, supporting event planning and publicity, and helping manage event operations. The experience strengthened my leadership, communication, teamwork, and problem-solving skills.",
   },
   photos: [
-    { src: eventLeads.url, alt: "ENIGMA 5.0 event leads Siddhi Naikare and Shreya Kanchan" },
+    { src: eventLeads.url, alt: "Shreya Kanchan, event lead for ENIGMA 5.0" },
     { src: eventGroup.url, alt: "ENIGMA event group gathered in the auditorium" },
     { src: outdoorTeam.url, alt: "Shreya and fellow event team members outdoors" },
     { src: organizingTeam.url, alt: "ENIGMA organizing team posing together in the auditorium" },
