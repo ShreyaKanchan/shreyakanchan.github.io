@@ -1,32 +1,26 @@
 import { useState } from "react";
-import { ChevronDown, ExternalLink, Lock } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 
 import { projects, type ProjectLink } from "@/data/portfolio";
+import { Button } from "@/components/ui/button";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
-function LinkButton({ link, note }: { link: ProjectLink | null; note: string }) {
+function LinkButton({ link }: { link: ProjectLink | null }) {
   if (!link) {
-    return (
-      <span
-        title={note}
-        className="inline-flex cursor-default items-center gap-1.5 rounded-full border border-dashed border-border px-4 py-2 text-xs font-medium text-muted-foreground/70"
-      >
-        <Lock className="size-3.5" aria-hidden />
-        Link coming soon
-      </span>
-    );
+    return null;
   }
   return (
-    <a
+    <Button asChild variant="outline" size="sm">
+      <a
       href={link.href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-white/5 px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-white/10"
     >
       {link.label}
       <ExternalLink className="size-3.5" aria-hidden />
     </a>
+    </Button>
   );
 }
 
@@ -76,23 +70,19 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
                 </li>
               ))}
             </ul>
-          ) : (
-            <p className="mt-4 text-xs text-muted-foreground/70">
-              Tech stack — details to be added
-            </p>
-          )}
+          ) : null}
 
           <div className="mt-5 flex flex-wrap items-center gap-2.5 border-t border-border pt-5">
             <LinkButton
               link={project.links.github ? { label: "GitHub Repo", href: project.links.github } : null}
-              note="Repository link will be added here"
             />
             <LinkButton
               link={project.links.demo ? { label: "Live Demo", href: project.links.demo } : null}
-              note="Demonstration link will be added here"
             />
-            <button
+            {project.details ? <Button
               type="button"
+              variant="ghost"
+              size="sm"
               onClick={() => setExpanded((v) => !v)}
               aria-expanded={expanded}
               className="ml-auto inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-semibold text-glow-violet transition-colors hover:text-glow-blue"
@@ -102,7 +92,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
                 className={`size-3.5 transition-transform ${expanded ? "rotate-180" : ""}`}
                 aria-hidden
               />
-            </button>
+            </Button> : null}
           </div>
         </div>
       </article>
@@ -121,7 +111,7 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Things I've built"
-          description="Hardware, security, and robotics — each one started as a question worth answering."
+          description="Blocklens, Chainforge, and Bridgewatch."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
