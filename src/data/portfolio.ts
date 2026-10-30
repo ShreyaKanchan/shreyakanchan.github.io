@@ -35,15 +35,14 @@ export const profile = {
 export const featuredHighlights = [
   {
     label: "Top 7",
-    detail: "ENIGMA Hackathon",
-    // TODO: confirm the exact ENIGMA edition, then set it here (e.g. "ENIGMA 4.0").
-    edition: "Edition to be confirmed",
+    detail: "in ENIGMA 4.0",
+    edition: "",
     href: "#achievements",
   },
   {
     label: "Top 12",
-    detail: "Hackanova",
-    edition: "Project & year to be added",
+    detail: "in Hackanova",
+    edition: "",
     href: "#achievements",
   },
   {
@@ -112,21 +111,17 @@ export const projects = [
 export const achievements = [
   {
     position: "Top 7",
-    title: "ENIGMA Hackathon",
-    // TODO: confirm the exact edition before sharing this portfolio widely.
-    edition: "Edition to be confirmed",
-    description:
-      "Participated in ENIGMA and achieved a Top 7 position with my team — a result built on late-night debugging, quick decision-making, and tight teamwork.",
-    year: "Year to be added", // TODO
+    title: "in ENIGMA 4.0",
+    edition: "",
+    description: "",
+    year: "",
   },
   {
     position: "Top 12",
-    title: "Hackanova",
-    edition: "Hackathon achievement",
-    // TODO: add the project/team name and year.
-    description:
-      "My team and project reached the Top 12 at Hackanova. Project name and year will be added here.",
-    year: "Year to be added", // TODO
+    title: "in Hackanova",
+    edition: "",
+    description: "",
+    year: "",
   },
   {
     position: "Second Place",

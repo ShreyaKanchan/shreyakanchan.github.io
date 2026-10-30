@@ -43,9 +43,9 @@ export default function Achievements() {
                           {item.year}
                         </span>
                       </div>
-                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {item.description ? <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                         {item.description}
-                      </p>
+                      </p> : null}
                     </div>
                   </div>
                 </Reveal>
