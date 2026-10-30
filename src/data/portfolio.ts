@@ -8,9 +8,9 @@
  */
 
 import heroBg from "@/assets/hero-bg.jpg";
-import projectSecurity from "@/assets/project-security.jpg";
-import projectFingerprint from "@/assets/project-fingerprint.jpg";
-import projectAquaRobot from "@/assets/project-aqua-robot.jpg";
+import projectBlocklens from "@/assets/project-blocklens.png.asset.json";
+import projectChainforge from "@/assets/project-chainforge.png.asset.json";
+import projectBridgewatch from "@/assets/project-bridgewatch.png.asset.json";
 import eventLeads from "@/assets/enigma-shreya-event-lead.jpeg.asset.json";
 import eventGroup from "@/assets/enigma-event-group.jpeg.asset.json";
 import outdoorTeam from "@/assets/enigma-outdoor-team.jpeg.asset.json";
@@ -66,49 +66,45 @@ export type ProjectLink = { label: string; href: string };
 
 export const projects = [
   {
-    title: "Secure Patient Document Transmission",
+    title: "Blocklens",
     description:
-      "A project focused on securely transmitting patient documents using cryptographic techniques to protect sensitive information and improve data confidentiality.",
-    // TODO: add a short "how it works" paragraph once finalized.
+      "A wallet-intelligence prototype that observes wallet activity and turns transfers into readable timelines.",
     details:
-      "More detail on the encryption flow and architecture will be added here once the project write-up is finalized.",
-    // TODO: add technology tags only where confirmed.
+      "Explores wallet activity through a prototype workflow: read the model, run tests, and extend the implementation.",
     tags: [] as string[],
-    image: projectSecurity,
-    imageAlt: "Concept visual of an encrypted patient document protected by a glowing padlock",
-    // TODO: paste the real repository and demo URLs when available.
+    image: projectBlocklens.url,
+    imageAlt: "Screenshot of the Blocklens wallet-intelligence project",
     links: {
       github: null as string | null,
-      demo: null as string | null,
+      demo: "https://shreyakanchan.github.io/blocklens/",
     },
   },
   {
-    title: "Portable Fingerprint Attendance System",
+    title: "Chainforge",
     description:
-      "A portable attendance system that uses fingerprint authentication to record attendance. The project involved fingerprint sensor integration and connected hardware components.",
+      "A protocol-education prototype for learning consensus by mining a readable chain.",
     details:
-      "The system pairs an ESP32 microcontroller with an R307 fingerprint sensor to enroll and verify users on the spot, with attendance data pushed to ThingSpeak for logging and visualization.",
-    tags: ["ESP32", "R307 Fingerprint Sensor", "ThingSpeak"],
-    image: projectFingerprint,
-    imageAlt: "ESP32 microcontroller wired to an R307 fingerprint sensor module on a breadboard",
+      "Explores how transactions become blocks and how those blocks form a chain through consensus.",
+    tags: [] as string[],
+    image: projectChainforge.url,
+    imageAlt: "Screenshot of the Chainforge protocol-education project",
     links: {
       github: null as string | null,
-      demo: null as string | null,
+      demo: "https://shreyakanchan.github.io/chainforge/",
     },
   },
   {
-    title: "Aqua Cleaning Robot",
+    title: "Bridgewatch",
     description:
-      "A robotics project focused on developing a robot for water-surface cleaning and supporting cleaner aquatic environments.",
+      "A bridge-operations prototype for monitoring cross-chain messages before pending delivery becomes an incident.",
     details:
-      "The robot operates on the water surface to collect floating waste, aimed at supporting cleaner ponds and lakes. Component details will be added once finalized.",
-    // TODO: add technology tags only after confirming the actual components used.
+      "Follows cross-chain messages through source, relay, and delivery to make the bridge workflow easier to observe.",
     tags: [] as string[],
-    image: projectAquaRobot,
-    imageAlt: "Concept render of a water-surface cleaning robot collecting floating debris",
+    image: projectBridgewatch.url,
+    imageAlt: "Screenshot of the Bridgewatch bridge-operations project",
     links: {
       github: null as string | null,
-      demo: null as string | null,
+      demo: "https://shreyakanchan.github.io/bridgewatch/",
     },
   },
 ];
